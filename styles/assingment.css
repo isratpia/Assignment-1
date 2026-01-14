@@ -8,14 +8,19 @@
   font-optical-sizing: auto;
 }
 header{
-  background-color: #FFFFFF; 
+  background-color: #FFFFFF;
+  
 }
 nav{
-  width: 1600ox;
+  width: 100%;
   max-width: 1600px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+#logo {
+  max-width: 139px;
+  margin-top: 16px;
 }
 nav .menu{
   display: flex;
@@ -38,3 +43,43 @@ nav .menu a{
   font-weight: 600;
   padding: 13px 16px;
 }
+#banner{
+  padding: 116px 120px 180px;
+  background-image: url("../images/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 16px 0 0 0;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+}
+#banner .banner-container{
+  width: 85%;
+  max-width: 1360ox;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 295px;
+}
+#access-btn{
+  font-size: 16;
+  font-weight: 500;
+  max-width: 229px;
+  color: #469165;
+  border: none;
+  border-radius: 1000px;
+  background-color: white;
+  padding: 8px 12px;
+}
+.banner-heading h2{
+  max-width: 770px;
+  text-align: center;
+  font-weight: 900;
+}
+.banner-heading p{
+  max-width: 1360px;
+  font-size: 18px;
+  text-align: center;
+  }
