@@ -13,7 +13,6 @@ header{
 }
 nav{
   width: 100%;
-  max-width: 1600px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -29,7 +28,8 @@ nav .menu{
   align-items: center;
 }
 nav .menu a{
-  font-size: 16;
+  font-size: 16px;
+  font-weight: 500;
   color: #000000;
   text-decoration: none;
   font-weight: 500;
@@ -45,18 +45,17 @@ nav .menu a{
 }
 #banner{
   padding: 116px 120px 180px;
-  background-image: url("../images/hero-bg.png");
+  background-image: url("/assets/hero-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   margin: 16px 0 0 0;
-  display: flex;
-  gap: 16px;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
+  
 }
-#banner .banner-container{
+.banner-container{
   width: 85%;
   max-width: 1360ox;
   margin: 0 auto;
@@ -64,7 +63,10 @@ nav .menu a{
   padding: 0 295px;
 }
 #access-btn{
-  font-size: 16;
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 16px;
   font-weight: 500;
   max-width: 229px;
   color: #469165;
@@ -73,13 +75,130 @@ nav .menu a{
   background-color: white;
   padding: 8px 12px;
 }
-.banner-heading h2{
+.dot{
+  width: 8px;
+  height: 8px;
+  background: #469165;        
+  border-radius: 50%;
+  box-shadow: 0 10px 20px -12px #000000;
+}
+.banner-heading{
+  margin: 12px auto;
+}
+.banner-heading h1{
   max-width: 770px;
   text-align: center;
-  font-weight: 900;
+  font-weight: 700;
+  margin-bottom: 12px;
+  font-size: 72px;
+  padding: 0 ;
+  color: #FFFFFF;
+  line-height: 84px;
+}
+.green-color{
+  color: #30B868;
 }
 .banner-heading p{
-  max-width: 1360px;
+  max-width: 700px;
   font-size: 18px;
+  color: #FFFFFF;
   text-align: center;
-  }
+  margin-bottom: 32px;
+  line-height: 24px;
+}
+.banner-button{
+  display: flex;
+  margin: 0 auto;
+  margin-left: 16px;
+  padding: 16px;
+ 
+}
+.work-btn{
+  max-width: 198px;
+  background-color: transparent;
+  font-size: 16px;
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+  padding: 12px 16px;
+  border-radius: 4px;
+}
+#strategy{
+  margin-top: 80px;
+}
+.strategy-container{
+  width: 85%;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+.strategy-head{
+  max-width: 1360px;
+  text-align: center;
+}
+.strategy-head h3{
+  font-size: 48px;
+  color: #001931;
+}
+.strategy-head p{
+  font-size: 16px;
+  color: #627382;
+  margin-bottom: 44px;
+}
+.strategy-box{
+  display:flex;
+  max-width: 1360px;
+  gap: 24px;
+}
+.strategy-box .strategy-card{
+  max-width: 322px;
+  padding: 70px 24px 0 24px;
+  text-align: center;
+  box-shadow: 0 10px 20px -12px #000000a2;
+}
+.strategy-card img{
+  max-width: 60px;
+  padding: 14px;
+  margin-bottom: 16px;
+  background-color: #F95555;
+  border-radius: 50%;
+}
+.strategy-card h3{
+  max-width: 274px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #001931;
+  margin-bottom: 16px;
+}
+.strategy-card p{
+  font-size: 16px;
+  color: #627382;
+  line-height: 20px;
+}
+#knowledge{
+  padding-top: 120px;
+}
+.knowledge-container{
+  width: 85%;
+  max-width: 1360px;
+  margin: 0 auto;
+  display: flex;
+  /* align-items: center; */
+  gap: 60px;
+}
+.knowledge-img{
+  max-width: 600px;
+  border-radius: 12px;
+}
+  .knowledge-info{
+  padding: 102px 0;
+}
+.knowledge-info h5{
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: #30B868;
+}
+.knowledge-info h3{
+  font-size: 48px;
+  font-weight: 700;
+  color: #001931;
+}
